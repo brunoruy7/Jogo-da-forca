@@ -28,7 +28,7 @@ def forca():
         vidas = 2
     while True:
         print('Vidas : {}'.format(vidas))
-        print('palavras usadas: {}.'.format(usadas))
+        print('Letras usadas: {}.'.format(usadas))
         print(guess)
         t = input()
         x = 0
@@ -42,7 +42,7 @@ def forca():
         usadas += ' ' + t
         if x == len(pal):
             vidas -= 1
-            x = 0
+            
         if vidas == 0 or guess == pal:
             break
     if vidas == 0:
